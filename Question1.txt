@@ -1,0 +1,14 @@
+Q1. Mathematical question
+We have an education product which is being used in the class. For a class of 30 students, what’s the defect frequency target per typical user session (say over a 10 minutes period) for the class if we aim for 90% defect-free rate for the entire class? All students are assumed to use the product the same way in their user session.
+SOLUTION:
+P = probability that the entire class is defect-free = 0.90.
+p = probability that a single student’s session is defect-free.
+n = number of students = 30.
+
+
+For the entire class to be defect-free, all individual sessions must be defect-free. So, the probability for the entire class to be defect-free is the product of each student's defect-free probability:                                    P=p^n=0.9
+=>    0.9=p^30
+=>    ln(0.90)=30ln(p)
+=>    p=0.9966
+So, the defect-free probability per student is about 99.66%. The probability of a defect occurring in a single student's session is:      1-0.9966=0.0034
+ANS=0.0034 or 0.34%
